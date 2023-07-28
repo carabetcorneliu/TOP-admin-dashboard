@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: rgb(55, 183, 243);
+    display: grid;
+    grid-template-rows: 1fr 5fr 3fr 5fr;
+    height: 100vh;
+    padding: 25px;
+    gap: 25px;
+
+    color: white;
+    font-family: "Roboto" , sans-serif;
+    font-size: calc(13px + 1vw/2);
+    font-weight: bold;
+}
+
+.sidebar > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dashboard */
+.sidebar > :nth-child(1) > li > * {       
+    font-size: calc(22px + 1vw/2);
+    display: grid;
+    grid-template-columns: auto 10fr;
+    align-items: center;
+}
+
+/* main Navigation */
+.sidebar > :nth-child(2) > li > * {
+    display: grid;
+    grid-template-columns: auto 10fr;
+    align-items: center;
+}
+
+/* secondary Navigation */
+.sidebar > :nth-child(3) > li > * {
+    display: grid;
+    grid-template-columns: auto 10fr;
+    align-items: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar a:visited {
+    color: white;
+}
+
+.sidebar a:active {
+    font-weight: 925;
+}
+
+#icon_dashboard {
+    width: 40px;
+    height: 40px;
+    padding-right: 13px;
+}
+
+#icon_home,
+#icon_profile,
+#icon_messages,
+#icon_history,
+#icon_tasks,
+#icon_communities,
+#icon_settings,
+#icon_support,
+#icon_privacy {
+    width: 26px;
+    height: 26px;
+    padding-left: 7px;
+    padding-right: 20px;
+}
+
+#icon_dashboard,
+#icon_home,
+#icon_profile,
+#icon_messages,
+#icon_history,
+#icon_tasks,
+#icon_communities,
+#icon_settings,
+#icon_support,
+#icon_privacy {
+    fill: white;
+}
+
+.nav,
+.navSettings {
+    line-height: 3rem;
+}
+
+.mainContent {
+    background-color:rgb(150, 150, 150);
+}
